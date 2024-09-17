@@ -128,6 +128,7 @@ CREATE TABLE tx_fourallportal_domain_model_event (
 	deleted smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 	PRIMARY KEY (uid),
+	UNIQUE KEY event_id (event_id),
 	KEY parent (pid),
 	KEY event_type (event_type),
 	KEY object_id (object_id),
